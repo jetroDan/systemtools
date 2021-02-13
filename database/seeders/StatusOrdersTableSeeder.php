@@ -14,7 +14,7 @@ class StatusOrdersTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('companies')->insert([
+        DB::table('statusorders')->insert([
             [
                 'name' => 'Por cotizar'
             ],
