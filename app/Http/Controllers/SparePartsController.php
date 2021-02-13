@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-Use App\Models\SpareParts;
+Use App\SpareParts;
 use Exception;
 use Validator;
 use Illuminate\Http\Request;

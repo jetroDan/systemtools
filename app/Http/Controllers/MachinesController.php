@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-Use App\Models\Machines;
+Use App\Machines;
 use Exception;
 use Validator;
 use Illuminate\Http\Request;

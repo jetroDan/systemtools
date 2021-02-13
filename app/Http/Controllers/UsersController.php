@@ -2,24 +2,21 @@
 
 namespace App\Http\Controllers;
 
-Use App\Models\Users;
+Use App\Users;
 use Exception;
 use Validator;
 use Illuminate\Http\Request;
 
 class UsersController extends Controller
 
-
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        //
-    }
-
-    //
+    
+        public function list(){
+            $users = Users::all();
+            return response()->json([
+                'status' => 'OK',
+                'users' => $users
+            ]);
+    
+        }
 }

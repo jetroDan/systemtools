@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-Use App\Models\StatusOrders;
+Use App\StatusOrders;
 use Exception;
 use Validator;
 use Illuminate\Http\Request;

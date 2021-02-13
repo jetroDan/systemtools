@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-Use App\Models\StatusUsers;
+Use App\StatusUsers;
 use Exception;
 use Validator;
 use Illuminate\Http\Request;
