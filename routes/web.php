@@ -16,3 +16,8 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+$router->get('userslist', [
+    'as' => 'userslist', 'uses' => 'UsersController@list'
+]);
+$router->post('usersCreate','UsersController@store');
+$router->put('usersUpdate/{id}','UsersController@update');
