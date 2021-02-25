@@ -27,3 +27,9 @@ $router->get('companieslist', [
 ]);
 $router->post('companiesCreate','CompaniesController@store');
 $router->put('companiesUpdate/{id}','CompaniesController@update');
+
+$router->get('machineslist', [
+    'as' => 'machineslist', 'uses' => 'MachinesController@list'
+]);
+$router->post('machinesCreate','MachinesController@store');
+$router->put('machinesUpdate/{id}','MachinesController@update');

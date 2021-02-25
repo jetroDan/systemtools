@@ -10,8 +10,9 @@ class Machines extends Model
 
     protected $fillable = [
        
-      
-        
-        
+      'name',
+      'brand',
+      'partnumber',  
+      'serialnumber'  
     ];
 }
