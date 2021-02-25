@@ -102,7 +102,8 @@ public function update($id)
         $user->phone = $body['phone'];
         $user->email = $body['phone'];
         $user->address = $body['address'];
-        $user->password = $body['password'];
+        $user->password =(isset($body['password']) ?  Hash::make($body['password']) : null);
+        // $user->password = $body['password'];
         $user->nss = $body['nss'];
         $user->rfc = $body['rfc'];
         $user->save();
