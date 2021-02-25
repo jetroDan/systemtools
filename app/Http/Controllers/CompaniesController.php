@@ -13,7 +13,7 @@ class CompaniesController extends Controller
      public function list() {
         $companies = Companies::all();
           
-        return response()->json($companies);
+        // return response()->json($companies);
 
         return response()->json([
            'status' => 'OK',

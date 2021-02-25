@@ -13,7 +13,7 @@ class UsersController extends Controller
      public function list() {
         $users = Users::all();
           
-        return response()->json($users);
+        // return response()->json($users);
 
         return response()->json([
            'status' => 'OK',
