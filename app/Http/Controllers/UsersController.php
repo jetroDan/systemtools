@@ -6,6 +6,7 @@ Use App\Users;
 use Exception;
 use Validator;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class UsersController extends Controller
 {
@@ -51,7 +52,8 @@ public function store(Request $request)
         $user->phone = $body['phone'];
         $user->email = $body['phone'];
         $user->address = $body['address'];
-        $user->password = $body['password'];
+        // $user->password = $body['password'];
+        $user->password =(isset($request['password']) ?  Hash::make($request['password']) : null);
         $user->nss = $body['nss'];
         $user->rfc = $body['rfc'];
         $user->save();
