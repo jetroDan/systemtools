@@ -4,13 +4,14 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class UsersRoles extends Model
+class Companies extends Model
 {
-    protected $table = "users";
+    protected $table = "companies";
 
     protected $fillable = [
        
-        'name'
+        'name',
+        'address'
      
         
         

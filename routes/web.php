@@ -21,3 +21,9 @@ $router->get('userslist', [
 ]);
 $router->post('usersCreate','UsersController@store');
 $router->put('usersUpdate/{id}','UsersController@update');
+
+$router->get('companieslist', [
+    'as' => 'companieslist', 'uses' => 'CompaniesController@list'
+]);
+$router->post('companiesCreate','CompaniesController@store');
+$router->put('companiesUpdate/{id}','CompaniesController@update');
