@@ -14,12 +14,12 @@ class UsersController extends Controller
      public function list() {
         $users = Users::all();
           
-        // return response()->json($users);
+        return response()->json($users);
 
-        return response()->json([
-           'status' => 'OK',
-           'users' => $users
-        ]);
+        // return response()->json([
+        //    'status' => 'OK',
+        //    'users' => $users
+        // ]);
     }
 
 //Metodo POST Guardar
@@ -121,6 +121,12 @@ public function update($id)
             'message' => $e->getMessage()
         ],400);
     }
+}
+
+public function usersDelete($id){
+    $users = Users::find($id);
+    $users->delete();
+    return response()->json(null,204);
 }
 
 }

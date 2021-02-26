@@ -23,6 +23,7 @@ $router->get('userslist', [
 ]);
 $router->post('usersCreate','UsersController@store');
 $router->put('usersUpdate/{id}','UsersController@update');
+$router->delete('usersDelete/{id}','UsersController@usersDelete');
 //companies
 $router->get('companieslist', [
     'as' => 'companieslist', 'uses' => 'CompaniesController@list'

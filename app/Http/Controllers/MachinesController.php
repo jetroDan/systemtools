@@ -15,12 +15,12 @@ class MachinesController extends Controller
     public function list() {
        $machines = Machines::all();
          
-    //    return response()->json($machines);
+       return response()->json($machines);
 
-       return response()->json([
-          'status' => 'OK',
-          'machines' => $machines
-       ]);
+    //    return response()->json([
+    //       'status' => 'OK',
+    //       'machines' => $machines
+    //    ]);
    }
 
 //Metodo POST Guardar
