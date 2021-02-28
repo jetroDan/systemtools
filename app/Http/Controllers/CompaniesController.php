@@ -96,5 +96,16 @@ public function update($id)
         ],400);
     }
 }
+public function companiesDelete($id){
+    $companies = Companies::find($id);
+    $companies->delete();
+    return response()->json(null,204);
+
+}
+
+public function searchCompanie($id){
+    $companies = Companies::find($id);
+    return response($companies);
+}
 
 }

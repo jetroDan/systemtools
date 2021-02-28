@@ -129,4 +129,9 @@ public function usersDelete($id){
     return response()->json(null,204);
 }
 
+public function searchUser($id){
+    $user = Users::find($id);
+    return response($user);
+}
+
 }

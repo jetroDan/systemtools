@@ -24,21 +24,35 @@ $router->get('userslist', [
 $router->post('usersCreate','UsersController@store');
 $router->put('usersUpdate/{id}','UsersController@update');
 $router->delete('usersDelete/{id}','UsersController@usersDelete');
+$router->get('searchUser/{id}','UsersController@searchUser');
+
+
 //companies
 $router->get('companieslist', [
     'as' => 'companieslist', 'uses' => 'CompaniesController@list'
 ]);
 $router->post('companiesCreate','CompaniesController@store');
 $router->put('companiesUpdate/{id}','CompaniesController@update');
+$router->delete('companiesDelete/{id}','CompaniesController@companiesDelete');
+$router->get('searchCompanie/{id}','CompaniesController@searchCompanie');
+
+
 //machines
 $router->get('machineslist', [
     'as' => 'machineslist', 'uses' => 'MachinesController@list'
 ]);
 $router->post('machinesCreate','MachinesController@store');
 $router->put('machinesUpdate/{id}','MachinesController@update');
+$router->delete('macinesDelete/{id}','MachinesController@machinesDelete');
+$router->get('searchMachine/{id}','MachinesController@searchMachine');
+
 //spareparts
 $router->get('sparepartslist', [
     'as' => 'sparepartslist', 'uses' => 'SparePartsController@list'
 ]);
 $router->post('sparepartsCreate','SparePartsController@store');
 $router->put('sparepartsUpdate/{id}','SparePartsController@update');
+$router->delete('sparepartsDelete/{id}','SparePartsController@sparepartsDelete');
+$router->get('searchSpareParts/{id}','SparePartsController@searchSpareParts');
+
+

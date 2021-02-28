@@ -112,5 +112,17 @@ public function update($id)
    }
 }
 
+public function sparepartsDelete($id){
+    $spareparts = SpareParts::find($id);
+    $spareparts->delete();
+    return response()->json(null,204);
+
+    // return response()->json(null,204);
+}
+public function searchSpareParts($id){
+    $spareparts = SpareParts::find($id);
+    return response($spareparts);
+}
+
 }
 

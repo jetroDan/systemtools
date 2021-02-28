@@ -107,5 +107,16 @@ public function update($id)
    }
 }
 
+public function machinesDelete($id){    
+    $machines = Machines::find($id);
+    $machines->delete();
+    return response()->json(null,204);
+}
+
+public function searchMachine($id){
+    $machines = Machines::find($id);
+    return response($machines);
+}
+
 }
 
