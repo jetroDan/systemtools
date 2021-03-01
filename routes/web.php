@@ -38,8 +38,8 @@ $router->get('searchCompanie/{id}','CompaniesController@searchCompanie');
 
 
 //machines
-$router->get('machineslist', [
-    'as' => 'machineslist', 'uses' => 'MachinesController@list'
+$router->get('api/machineslist', [
+    'as' => 'api/machineslist', 'uses' => 'MachinesController@list'
 ]);
 $router->post('machinesCreate','MachinesController@store');
 $router->put('machinesUpdate/{id}','MachinesController@update');
