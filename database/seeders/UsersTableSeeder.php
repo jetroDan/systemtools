@@ -23,7 +23,8 @@ class UsersTableSeeder extends Seeder
                 'address' => 'Rayon 1',
                 'password' => '1234',
                 'nss' => '987sf78sd79',
-                'rfc' => 'RFC898s98'
+                'rfc' => 'RFC898s98',
+                'orders_id' => 1
             ],
             [
                 'name' => 'Efren Alejandro',
@@ -33,7 +34,8 @@ class UsersTableSeeder extends Seeder
                 'address' => 'San sebas 87',
                 'password' => '87654',
                 'nss' => 'SScuyusyus',
-                'rfc' => 'RFC989a88a9'
+                'rfc' => 'RFC989a88a9',
+                'orders_id' => 2
             ],
             [
                 'name' => 'Yazmin',
@@ -43,7 +45,8 @@ class UsersTableSeeder extends Seeder
                 'address' => 'Javier Mina 65',
                 'password' => '123',
                 'nss' => 'iuisudis',
-                'rfc' => 'RFC6767s'
+                'rfc' => 'RFC6767s',
+                'orders_id' => 3
             ],
             [
                 'name' => 'Mariaylin',
@@ -53,7 +56,8 @@ class UsersTableSeeder extends Seeder
                 'address' => 'Centauro 4303',
                 'password' => '123',
                 'nss' => 'iuisudis',
-                'rfc' => 'RFC6767s'
+                'rfc' => 'RFC6767s',
+                'orders_id' => 4
             ],
             [
                 'name' => 'Victor',
@@ -63,7 +67,8 @@ class UsersTableSeeder extends Seeder
                 'address' => 'Centauro 4303',
                 'password' => '123',
                 'nss' => 'iuisudis',
-                'rfc' => 'RFC6767s'
+                'rfc' => 'RFC6767s',
+                'orders_id' => 5
             ],
             [
                 'name' => 'Jose David',
@@ -73,7 +78,8 @@ class UsersTableSeeder extends Seeder
                 'address' => 'Ramon Corona 12',
                 'password' => '123',
                 'nss' => 'iuisudis',
-                'rfc' => 'RFC6767s'
+                'rfc' => 'RFC6767s',
+                'orders_id' => 6
             ],
             [
                 'name' => 'Alfonso',
@@ -83,7 +89,8 @@ class UsersTableSeeder extends Seeder
                 'address' => 'Centauro 4303',
                 'password' => '123',
                 'nss' => 'iuisudis',
-                'rfc' => 'RFC6767s'
+                'rfc' => 'RFC6767s',
+                'orders_id' => 7
             ],
             [
                 'name' => 'Frank',
@@ -93,7 +100,9 @@ class UsersTableSeeder extends Seeder
                 'address' => 'Centauro 4303',
                 'password' => '123',
                 'nss' => 'iuisudis',
-                'rfc' => 'RFC6767s'
+                'rfc' => 'RFC6767s',
+                'orders_id' => 8
+                
             ],
             [
                 'name' => 'jetroDan0978',
@@ -103,7 +112,8 @@ class UsersTableSeeder extends Seeder
                 'address' => 'Centauro 4303',
                 'password' => '123',
                 'nss' => 'iuisudis',
-                'rfc' => 'RFC6767s'
+                'rfc' => 'RFC6767s',
+                'orders_id' => 9
             ],
             [
                 'name' => 'Frank',
@@ -113,7 +123,8 @@ class UsersTableSeeder extends Seeder
                 'address' => 'Centauro 4303',
                 'password' => '123',
                 'nss' => 'iuisudis',
-                'rfc' => 'RFC6767s'
+                'rfc' => 'RFC6767s',
+                'orders_id' => 10
             ],
           
          ]);

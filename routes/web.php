@@ -55,4 +55,12 @@ $router->put('sparepartsUpdate/{id}','SparePartsController@update');
 $router->delete('sparepartsDelete/{id}','SparePartsController@sparepartsDelete');
 $router->get('searchSpareParts/{id}','SparePartsController@searchSpareParts');
 
+//Orders
+$router->get('orderslist', [
+    'as' => 'orderslist', 'uses' => 'OrdersController@list'
+]);
+$router->post('ordersCreate','OrdersController@store');
+$router->put('ordersUpdate/{id}','OrdersController@update');
+$router->delete('ordersDelete/{id}','OrdersController@OrdersDelete');
+$router->get('searchOrders/{id}','OrdersController@SearchOrders');
 

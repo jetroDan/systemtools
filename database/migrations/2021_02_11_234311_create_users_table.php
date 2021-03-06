@@ -23,6 +23,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('nss');
             $table->string('rfc');
+            $table->integer('orders_id');
             $table->timestamps();
         });
     }
