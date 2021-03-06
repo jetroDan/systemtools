@@ -20,6 +20,7 @@ class CreateSparepartsTable extends Migration
             $table->string('serialpart');
             $table->integer('quuantity');
             $table->string('unit');
+            //$table->integer('orders_id');
             $table->timestamps();
         });
     }

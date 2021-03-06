@@ -21,4 +21,9 @@ class Users extends Model
         
         
     ];
+
+    public function hasOrders()
+    {
+        return $this->hasMany(Orders::class);
+    }
 }

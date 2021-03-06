@@ -17,23 +17,28 @@ class BranchesTableSeeder extends Seeder
         DB::table('branches')->insert([
             [
                 'name' => 'Centro de servicio Metabo suc1',
-                'address' => 'El centro'
+                'address' => 'El centro',
+                'company_id' => 1
             ],
             [
                 'name' => 'Centro de servicio Makita suc1',
-                'address' => 'Tlaquepaque'
+                'address' => 'Tlaquepaque',
+                'company_id' => 2
             ],
             [
                 'name' => 'Centro de servicio Bosch suc1',
-                'address' => 'Zapopan'
+                'address' => 'Zapopan',
+                'company_id' => 3
             ],
             [
                 'name' => 'Centro de servicio Dewalt suc1',
-                'address' => 'El salto'
+                'address' => 'El salto',
+                'company_id' => 4
             ],
             [
                 'name' => 'Centro de servicio Milwakee suc1',
-                'address' => 'Tlaquepaque'
+                'address' => 'Tlaquepaque',
+                'company_id' => 4
             ]
         ]);
     }

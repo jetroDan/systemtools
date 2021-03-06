@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 Use App\Users;
+Use App\Orders;
 use Exception;
 use Validator;
 use Illuminate\Http\Request;
@@ -13,8 +14,12 @@ class UsersController extends Controller
      //Metodo GET Listar registro
      public function list() {
         $users = Users::all();
-          
-        return response()->json($users);
+        $users->load('hasOrders');
+
+        $orders = Orders::find(1)->load('hasUser');
+       // $orders->hasUser');
+
+        return response()->json(['users' => $users, 'orders' => $orders]);
 
         // return response()->json([
         //    'status' => 'OK',

@@ -17,6 +17,7 @@ class CreateBranchesTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('address');
+            $table->integer('company_id');
             $table->timestamps();
         });
     }

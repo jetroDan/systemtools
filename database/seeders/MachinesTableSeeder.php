@@ -18,33 +18,24 @@ class MachinesTableSeeder extends Seeder
         Db::table('machines')->insert([
             [
                 'name' => 'Mini Esmeriladora',
-                'brand' => 'Dewalt',
-                'partnumber' => '1092187878238',
-                'serialnumber' => 'DW093829812'
+                'brand' => 'Dewalt'
+               
             ],
             [
                 'name' => 'Pulidora',
-                'brand' => 'Bosch',
-                'partnumber' => '98342032093',
-                'serialnumber' => 'Bfsa908d0a9'
+                'brand' => 'Bosch'
             ],
             [
                 'name' => 'Cortadora de metales',
-                'brand' => 'Dewalt',
-                'partnumber' => '9834920933',
-                'serialnumber' => 'DEW09878ew'
+                'brand' => 'Dewalt'
             ],
             [
                 'name' => 'Mini Esmeriladora',
-                'brand' => 'Makita',
-                'partnumber' => '9382095776',
-                'serialnumber' => 'MK998217671'
+                'brand' => 'Makita'
             ],
             [
                 'name' => 'Pulidora',
-                'brand' => 'Dewalt',
-                'partnumber' => '91541324',
-                'serialnumber' => 'DW0987544312'
+                'brand' => 'Dewalt'
             ]
         ]);
     }

@@ -17,8 +17,7 @@ class CreateMachinesTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('brand');
-            $table->string('partnumber');
-            $table->string('serialnumber');
+            //$table->integer('orders_id');
             $table->timestamps();
         });
     }

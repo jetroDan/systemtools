@@ -14,4 +14,9 @@ class Orders extends Model
         
         
     ];
+
+    public function hasUser()
+    {
+        return $this->belongsTo(Users::class, "users_id");
+    }
 }

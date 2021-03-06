@@ -15,14 +15,20 @@ class CreateOrdersTable extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->string('date');
+            $table->date('date');
             $table->string('quantity');
             $table->string('description');
-            $table->string('companie');
-            $table->string('sparepartsprice');
+            $table->string('partnumber');
+            $table->string('serialnumber');
+            $table->decimal('sparepartsprice');
             $table->decimal('subtotal');
             $table->decimal('iva');
             $table->decimal('total');
+            $table->integer('users_id');
+            $table->integer('spareparts_id');
+            $table->integer('company_id');
+            $table->integer('machines_id');
+            $table->integer('statusorders_id');
             $table->timestamps();
         });
     }
