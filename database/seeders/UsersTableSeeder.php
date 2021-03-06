@@ -24,7 +24,8 @@ class UsersTableSeeder extends Seeder
                 'password' => '1234',
                 'nss' => '987sf78sd79',
                 'rfc' => 'RFC898s98',
-                'orders_id' => 1
+                'orders_id' => 1,
+                'statusUser_id' => 1
             ],
             [
                 'name' => 'Efren Alejandro',
@@ -35,7 +36,8 @@ class UsersTableSeeder extends Seeder
                 'password' => '87654',
                 'nss' => 'SScuyusyus',
                 'rfc' => 'RFC989a88a9',
-                'orders_id' => 2
+                'orders_id' => 2,
+                'statusUser_id' => 1
             ],
             [
                 'name' => 'Yazmin',
@@ -46,7 +48,8 @@ class UsersTableSeeder extends Seeder
                 'password' => '123',
                 'nss' => 'iuisudis',
                 'rfc' => 'RFC6767s',
-                'orders_id' => 3
+                'orders_id' => 3,
+                'statusUser_id' => 1
             ],
             [
                 'name' => 'Mariaylin',
@@ -57,7 +60,8 @@ class UsersTableSeeder extends Seeder
                 'password' => '123',
                 'nss' => 'iuisudis',
                 'rfc' => 'RFC6767s',
-                'orders_id' => 4
+                'orders_id' => 4,
+                'statusUser_id' => 1
             ],
             [
                 'name' => 'Victor',
@@ -68,7 +72,8 @@ class UsersTableSeeder extends Seeder
                 'password' => '123',
                 'nss' => 'iuisudis',
                 'rfc' => 'RFC6767s',
-                'orders_id' => 5
+                'orders_id' => 5,
+                'statusUser_id' => 1
             ],
             [
                 'name' => 'Jose David',
@@ -79,7 +84,8 @@ class UsersTableSeeder extends Seeder
                 'password' => '123',
                 'nss' => 'iuisudis',
                 'rfc' => 'RFC6767s',
-                'orders_id' => 6
+                'orders_id' => 6,
+                'statusUser_id' => 1
             ],
             [
                 'name' => 'Alfonso',
@@ -90,7 +96,8 @@ class UsersTableSeeder extends Seeder
                 'password' => '123',
                 'nss' => 'iuisudis',
                 'rfc' => 'RFC6767s',
-                'orders_id' => 7
+                'orders_id' => 7,
+                'statusUser_id' => 1
             ],
             [
                 'name' => 'Frank',
@@ -101,7 +108,8 @@ class UsersTableSeeder extends Seeder
                 'password' => '123',
                 'nss' => 'iuisudis',
                 'rfc' => 'RFC6767s',
-                'orders_id' => 8
+                'orders_id' => 8,
+                'statusUser_id' => 1
                 
             ],
             [
@@ -113,7 +121,8 @@ class UsersTableSeeder extends Seeder
                 'password' => '123',
                 'nss' => 'iuisudis',
                 'rfc' => 'RFC6767s',
-                'orders_id' => 9
+                'orders_id' => 9,
+                'statusUser_id' => 1
             ],
             [
                 'name' => 'Frank',
@@ -124,7 +133,8 @@ class UsersTableSeeder extends Seeder
                 'password' => '123',
                 'nss' => 'iuisudis',
                 'rfc' => 'RFC6767s',
-                'orders_id' => 10
+                'orders_id' => 10,
+                'statusUser_id' => 1
             ],
           
          ]);

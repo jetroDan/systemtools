@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 Use App\Users;
 Use App\Orders;
+Use App\StatusUsers;
 use Exception;
 use Validator;
 use Illuminate\Http\Request;
@@ -15,11 +16,12 @@ class UsersController extends Controller
      public function list() {
         $users = Users::all();
         $users->load('hasOrders');
+        $users->load('hasUserStatus');
 
-        $orders = Orders::find(1)->load('hasUser');
-       // $orders->hasUser');
+   
 
-        return response()->json(['users' => $users, 'orders' => $orders]);
+        return response()->json(['users' => $users]);
+        // return response()->json(['users' => $users, 'orders' => $orders]);
 
         // return response()->json([
         //    'status' => 'OK',

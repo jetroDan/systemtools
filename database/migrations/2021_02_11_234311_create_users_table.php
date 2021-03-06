@@ -24,6 +24,7 @@ class CreateUsersTable extends Migration
             $table->string('nss');
             $table->string('rfc');
             $table->integer('orders_id');
+            $table->integer('statusUser_id');
             $table->timestamps();
         });
     }

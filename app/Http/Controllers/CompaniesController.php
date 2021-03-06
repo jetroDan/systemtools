@@ -11,14 +11,12 @@ class CompaniesController extends Controller
 {
      //Metodo GET Listar registro
      public function list() {
-        $companies = Companies::all();
-          
+        
+        $companies =  Companies::all();
+        $companies->load('hasUserCompany'); 
         // return response()->json($companies);
 
-        return response()->json([
-           'status' => 'OK',
-           'companies' => $companies
-        ]);
+        return response()->json(['companies' => $companies]);
     }
 
 //Metodo POST Guardar

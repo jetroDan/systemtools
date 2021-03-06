@@ -26,4 +26,8 @@ class Users extends Model
     {
         return $this->hasMany(Orders::class);
     }
+    public function hasUserStatus()
+    {
+        return $this->belongsTo(StatusUsers::class, "statusUser_id");
+    }
 }

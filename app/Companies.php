@@ -16,4 +16,8 @@ class Companies extends Model
         
         
     ];
+    public function hasUserCompany()
+    {
+        return $this->belongsTo(Users::class, "id");
+    }
 }
