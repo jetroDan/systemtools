@@ -12,4 +12,8 @@ class Branches extends Model
   
         
     ];
+    public function hasCompany()
+    {
+        return $this->belongsTo(Companies::class, "id");
+    }
 }

@@ -11,15 +11,13 @@ class BranchesController extends Controller
 
 
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        //
-    }
+    public function list() {
+        $branches= Branches::all();
+        $branches->load('hasCompany');
 
-    //
+   
+
+        return response()->json(['branches' => $branches]);
+       
+    }
 }

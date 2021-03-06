@@ -64,3 +64,12 @@ $router->put('ordersUpdate/{id}','OrdersController@update');
 $router->delete('ordersDelete/{id}','OrdersController@OrdersDelete');
 $router->get('searchOrders/{id}','OrdersController@SearchOrders');
 
+//branches
+$router->get('branchlist', [
+    'as' => 'branchlist', 'uses' => 'BranchesController@list'
+]);
+$router->post('branchCreate','OrdersController@store');
+$router->put('branchUpdate/{id}','BranchesController@update');
+$router->delete('branchDelete/{id}','BranchesController@BranchDelete');
+$router->get('searchbranch/{id}','BranchesController@SearchBranch');
+
